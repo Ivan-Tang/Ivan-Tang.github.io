@@ -11,54 +11,53 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Physics (Honors Program), Nanjing University, 2023 – 2027 (expected)  
+  GPA: 4.37 / 5.00  
+  Rank (within Honors cohort): 5 / 31
 
-Work experience
+Research & Project Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **IMC Global Trading Challenge**
+  * April 2025  
+  * Led development of volatility arbitrage strategies under memory constraints  
+  * Built real-time feature pipelines and regime-switching logic  
+  * Ranked **1st in Hong Kong**, **2nd in China** out of 4,000+ teams  
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Solar Eruption 3D Structure Modeling**, Undergraduate Research Program  
+  * Nanjing University, May 2024 – Present  
+  * Principal Investigator, supervised by Prof. Yang Guo  
+  * Modeled solar flux rope dynamics using CHASE satellite data and MHD simulations  
+  * Implemented magnetofrictional evolution with MPI-AMRVAC 3.0
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* **CNN-based Flare Prediction in Solar Active Regions**  
+  * Nanjing University, Sep – Dec 2024  
+  * Supervised by Prof. Qi Hao  
+  * Applied deep learning for image classification and prediction of flare events from CHASE data
+
+
+* **Solar Differential Rotation Analysis**  
+  * Nanjing University, Dec 2023 – May 2024  
+  * Individual Research, supervised by Prof. Xin Cheng and Prof. Yang Guo
+  * Extracted coronal motion vectors using image tracking and latitudinal velocity estimation
+
+
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming: Python (Proficient), C++ (Learning), LaTeX, Bash
+* Data Tools: pandas, NumPy, matplotlib, seaborn, Jupyter, Git
+* Machine Learning: PyTorch, sklearn (CNNs, LSTM, XGBoost)
+* Quant Research: Backtesting, alpha design, regime switching, volatility modeling
+* Scientific Computing: MPI-AMRVAC,MHD simulations
 
-Publications
+Honors & Awards
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* 1st Prize – Fundamental Science Scholarship, Nanjing University (2024)
+* 3rd Prize – People's Scholarship, Nanjing University (2024)
+* Best Poster Award – Creative Physics Lab Competition, Nanjing University (2023)
+* 1st Prize (Top 36) – National Physics Olympiad, Guangdong Province (2022)
+
+Others
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* GitHub: [Ivan-Tang](https://github.com/Ivan-Tang)  
+* Zhihu: [ivantang-89](https://www.zhihu.com/people/ivantang-89)

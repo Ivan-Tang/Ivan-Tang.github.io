@@ -19,7 +19,7 @@ redirect_from:
 
 I’m passionate about modeling complex systems — from the magnetic structures of the Sun to the price dynamics of financial markets. My academic journey began with **computational astrophysics**, where I worked on 3D reconstruction of solar eruptions and high-resolution MHD simulations. Along the way, I developed a deep interest in **financial market modeling**, where similar tools — simulation, statistical learning, system thinking — apply in entirely new ways.
 
-You can find my CV at: [汤轶文CV](../assets/汤轶文CV.pdf) [Yiwen Tang's CV](../assets/YiwenTangCV.pdf)
+You can find my CV at: [汤轶文CV](../assets/cv/汤轶文CV.pdf) [Yiwen Tang's CV](../assets/cv/YiwenTangCV.pdf)
 
 ---
 
