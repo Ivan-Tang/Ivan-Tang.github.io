@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Welcome to Yiwen Tang's Homepage"
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,7 +10,7 @@ redirect_from:
 # 👋 Hi, I'm Yiwen Tang (汤轶文)
 
 🎓 Undergraduate student in Physics (Honors Program) at Nanjing University  
-📍 Based in Nanjing, China | Expected Graduation: July 2027  
+📍 Based in Nanjing, China | Expected Graduation: June 2027  
 🔬 Astrophysics Researcher | Quantitative Researcher
 
 ---
@@ -19,7 +19,7 @@ redirect_from:
 
 I’m passionate about modeling complex systems — from the magnetic structures of the Sun to the price dynamics of financial markets. My academic journey began with **computational astrophysics**, where I worked on 3D reconstruction of solar eruptions and high-resolution MHD simulations. Along the way, I developed a deep interest in **financial market modeling**, where similar tools — simulation, statistical learning, system thinking — apply in entirely new ways.
 
-You can find my CV at: [汤轶文CV](../assets/汤轶文CV.pdf)[Yiwen Tang's CV](../assets/YiwenTangCV.pdf)
+You can find my CV at: [汤轶文CV](../assets/汤轶文CV.pdf) [Yiwen Tang's CV](../assets/YiwenTangCV.pdf)
 
 ---
 
@@ -27,7 +27,7 @@ You can find my CV at: [汤轶文CV](../assets/汤轶文CV.pdf)[Yiwen Tang's CV]
 ## 📈 Quantitative Research
 
 - **IMC Global Trading Challenge (2025)**  
-  Developed a volatility arbitrage strategy and a dynamic regime-switching system under real-time constraints. Achieved **1st place in the Hong Kong region**, 2nd in China among 4,000+ teams.
+  Developed a volatility arbitrage strategy and a dynamic regime-switching system under real-time constraints. Achieved **1st place in the Hong Kong region**, 2nd in China among 4,000+ teams (in the 3rd round).
 
 - **Interests**:  
   - Alpha Signal Research (equities, fixed income)  
