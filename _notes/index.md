@@ -8,10 +8,12 @@ permalink: /notes/
 
 欢迎访问我的课程笔记！
 
-{% assign notes_collections = site.notes | sort: 'title' %}
 <ul>
-  {% for note in notes_collections %}
-    <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+  {% assign courses = site.notes | where_exp: "item", "item.path contains '/index.md'" | sort: "title" %}
+  {% for course in courses %}
+    {% unless course.url == page.url %}
+      <li><a href="{{ course.url }}">{{ course.title }}</a></li>
+    {% endunless %}
   {% endfor %}
 </ul>
 
