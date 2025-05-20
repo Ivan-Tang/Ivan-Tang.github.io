@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "lec1"
-permalink: /notes/lec1/
+permalink: /notes/量子力学/
 ---
 
 # lec1
@@ -10,7 +10,7 @@ permalink: /notes/lec1/
 
 <ul>
   {% for file in site.static_files %}
-    {% if file.path contains '/_notes/lec1/' and file.extname == '.pdf' %}
+    {% if file.path contains '/_notes/量子力学/' and file.extname == '.pdf' %}
       <li><a href="{{ file.path | relative_url }}">{{ file.name }}</a></li>
     {% endif %}
   {% endfor %}
