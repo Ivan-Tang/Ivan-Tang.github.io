@@ -9,9 +9,10 @@ permalink: /notes/lec1/
 本课程笔记：
 
 <ul>
-  {% assign pdfs = site.static_files | where_exp: "file", "file.path contains '/_notes/lec1/' and file.extname == '.pdf'" | sort: "name" %}
-  {% for pdf in pdfs %}
-    <li><a href="{{ pdf.path | relative_url }}">{{ pdf.name }}</a></li>
+  {% for file in site.static_files %}
+    {% if file.path contains '/_notes/lec1/' and file.extname == '.pdf' %}
+      <li><a href="{{ file.path | relative_url }}">{{ file.name }}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
 
