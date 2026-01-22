@@ -1,0 +1,31 @@
+# 课程笔记目录（课程 -> 章节 -> PDF）
+#
+# 约定：PDF 优先放到 `files/notes/<course-id>/`（推荐，URL 更干净）。
+#
+# 字段说明：
+# - id: 课程目录名（与 `_notes/<id>/` 一致）
+# - title: 页面显示的课程名
+# - url: 课程主页（通常是 `/notes/<id>/`）
+# - chapters: 章节列表（按顺序写即可）
+
+courses:
+  - id: quantumn-mechanics
+    title: "量子力学"
+    url: /notes/quantumn-mechanics/
+    chapters:
+      - title: "第一章 绪论"
+        pdf: "/files/notes/quantumn-mechanics/第一章 （量子力学）绪论.pdf"
+      - title: "第二章 量子力学的形式理论"
+        pdf: "/files/notes/quantumn-mechanics/第二章 量子力学的形式理论.pdf"
+      - title: "第三章 基本应用一"
+        pdf: "/files/notes/quantumn-mechanics/第三章 基本应用一.pdf"
+      - title: "第四章 对称性与守恒量"
+        pdf: "/files/notes/quantumn-mechanics/第四章 对称性与守恒量.pdf"
+      - title: "第五章 基本应用二"
+        pdf: "/files/notes/quantumn-mechanics/第五章 基本应用二.pdf"
+      - title: "第六章 全同粒子"
+        pdf: "/files/notes/quantumn-mechanics/第六章 全同粒子.pdf"
+      - title: "第七章 微扰理论"
+        pdf: "/files/notes/quantumn-mechanics/第七章 微扰理论.pdf"
+      - title: "第八章 变分法"
+        pdf: "/files/notes/quantumn-mechanics/第八章 变分法.pdf"

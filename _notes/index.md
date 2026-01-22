@@ -8,6 +8,14 @@ permalink: /notes/
 
 欢迎访问我的课程笔记！
 
+## 课程列表
+
+{% include notes/course_list.html %}
+
+{% comment %}
+  兜底：如果你还没维护 `_data/notes.yml`，依然可以通过课程目录里的 `index.md` 自动聚合。
+{% endcomment %}
+
 <ul>
   {% assign courses = site.notes | where_exp: "item", "item.path contains '/index.md'" | sort: "title" %}
   {% for course in courses %}
@@ -17,4 +25,4 @@ permalink: /notes/
   {% endfor %}
 </ul>
 
-> 选择课程进入后可浏览各章节 PDF。
+> 进入课程后，你会看到“章节 → PDF”的目录结构。

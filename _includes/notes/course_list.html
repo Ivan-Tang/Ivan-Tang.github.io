@@ -1,0 +1,15 @@
+{% comment %}
+  Render notes course list from `_data/notes.yml`.
+  Fallback: when data is missing, render nothing.
+{% endcomment %}
+
+{% assign notes_data = site.data.notes %}
+{% if notes_data and notes_data.courses %}
+  <ul>
+    {% for course in notes_data.courses %}
+      <li>
+        <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

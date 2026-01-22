@@ -1,0 +1,26 @@
+{% comment %}
+  Usage:
+    {% include notes/chapter_list.html course_id="quantumn-mechanics" %}
+
+  Data source: `_data/notes.yml`
+
+  Each chapter item supports:
+    - title: display name
+    - pdf: absolute path (e.g. /files/notes/... or /_notes/...)
+{% endcomment %}
+
+{% assign notes_data = site.data.notes %}
+{% assign cid = include.course_id %}
+
+{% if notes_data and notes_data.courses and cid %}
+  {% assign course = notes_data.courses | where: "id", cid | first %}
+  {% if course and course.chapters %}
+    <ol>
+      {% for ch in course.chapters %}
+        <li>
+          <a href="{{ ch.pdf | uri_escape | relative_url }}">{{ ch.title }}</a>
+        </li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+{% endif %}
