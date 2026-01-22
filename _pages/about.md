@@ -26,13 +26,12 @@ You can find my CV at: [汤轶文CV](../assets/cv/汤轶文CV.pdf) [Yiwen Tang's
 
 ## 📈 Quantitative Research
 
+- **Lingjun Investment (QR Intern)**   
+  Focusing on High Frequency Equity ML model
+- **Xuanxin Investment (QR Intern)**  
+  Focusing on High Frequency Equity ML Model, mainly LightGBM and GNN/HGNN.
 - **IMC Global Trading Challenge (2025)**  
-  Developed a volatility arbitrage strategy and a dynamic regime-switching system under real-time constraints. Achieved **1st place in the Hong Kong region**, 2nd in China among 4,000+ teams (in the 3rd round).
-
-- **Interests**:  
-  - Alpha Signal Research (equities, fixed income)  
-  - Market Microstructure & Execution  
-  - Online Machine Learning in Quantitative Trading
+  Achieved **1st place in the Hong Kong region**, 2nd in China among 4,000+ teams (in the 3rd round).
 
 ---
 
@@ -40,33 +39,9 @@ You can find my CV at: [汤轶文CV](../assets/cv/汤轶文CV.pdf) [Yiwen Tang's
 ## 🌞 Astrophysics Research
 
 - **3D Structure of Solar Eruptions**  
-  Led an undergraduate research program focused on reconstructing the 3D velocity field and magnetic structure of solar prominences using CHASE satellite data.
-  
-- **MHD Simulation of Solar Flux Ropes**  
-  Applied the MPI-AMRVAC 3.0 codebase to simulate nonlinear magnetofrictional evolution of eruptive solar magnetic fields.
+  In this project, we are trying to find out 3D magnetic structure as well as 3D velocity of an erupting filament.
 
-- **Solar Differential Rotation via Remote Sensing**  
-  Used time-series image analysis techniques to study solar rotational asymmetry and latitudinal flows.
 
-These experiences shaped my understanding of dynamic systems, data uncertainty, and simulation fidelity — skills that now inform my work in quantitative modeling.
-
----
-
-## 🧠 Technical Skills
-
-- **Languages**: Python (Proficient), C++ (Learning), LaTeX  
-- **Quant Tools**: pandas, NumPy, matplotlib, seaborn, PyTorch, freqtrade  
-- **Astrophysics Tools**: MPI-AMRVAC, FITS data processing, OpenCV  
-- **Math/Stats**: Probability, Time Series, Optimization, Regression  
-- **Others**: Git, Linux, Jupyter, VS Code
-
----
-
-## 🧪 Selected Projects
-
-- **Solar Prominence 3D Reconstruction** – CHASE data, magnetofrictional method, MHD simulation 
-- **UniTrackFormer** – An end to end trajectory reconstruction model in particle Physics  
----
 
 ## 📫 Contact
 
@@ -76,4 +51,4 @@ These experiences shaped my understanding of dynamic systems, data uncertainty, 
 
 ---
 
-*Bridging physics and finance, I explore the patterns behind seemingly chaotic systems — whether in the Sun’s corona or the global markets.*
+*循此苦旅，以达繁星*
