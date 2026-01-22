@@ -17,8 +17,16 @@
   {% if course and course.chapters %}
     <ol>
       {% for ch in course.chapters %}
+        {% comment %}
+          IMPORTANT:
+          - `uri_escape` on a full path may encode `/` into `%2F`.
+          - We encode each path segment and then join with `/` to keep slashes intact.
+        {% endcomment %}
+        {% assign _parts = ch.pdf | split: '/' %}
+        {% assign _enc_parts = _parts | map: 'uri_escape' %}
+        {% assign _enc_path = _enc_parts | join: '/' | replace: '+', '%20' %}
         <li>
-          <a href="{{ ch.pdf | uri_escape | relative_url }}">{{ ch.title }}</a>
+          <a href="{{ _enc_path | relative_url }}">{{ ch.title }}</a>
         </li>
       {% endfor %}
     </ol>
