@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "示例：代码、图片与 LaTeX"
 date: 2026-01-23 12:30:00 +0800
 author_profile: true
