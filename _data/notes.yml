@@ -14,7 +14,7 @@ courses:
     url: /notes/quantumn-mechanics/
     chapters:
       - title: "第一章 绪论"
-        pdf: "/files/notes/quantumn-mechanics/第一章 （量子力学）绪论.pdf"
+        pdf: "/files/notes/quantumn-mechanics/第一章 绪论.pdf"
       - title: "第二章 量子力学的形式理论"
         pdf: "/files/notes/quantumn-mechanics/第二章 量子力学的形式理论.pdf"
       - title: "第三章 基本应用一"
