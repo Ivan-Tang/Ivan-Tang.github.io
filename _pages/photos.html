@@ -1,0 +1,42 @@
+---
+layout: single
+title: "Photos"
+permalink: /photos/
+author_profile: true
+---
+
+<div class="photo-timeline">
+  {% assign photos = site.photos %}
+  {% if photos %}
+    {% assign photos = photos | sort: "date" | reverse %}
+  {% else %}
+    {% assign photos = "" | split: "" %}
+  {% endif %}
+  {% for post in photos %}
+    <article class="photo-timeline__item">
+      <div class="photo-timeline__dot" aria-hidden="true"></div>
+      <div class="photo-timeline__content">
+        <div class="photo-timeline__meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+          {% if post.location %}
+            <span class="photo-timeline__location"> · {{ post.location }}</span>
+          {% endif %}
+        </div>
+        {% if post.title %}
+          <h2 class="photo-timeline__title">{{ post.title }}</h2>
+        {% endif %}
+        {% if post.description %}
+          <p class="photo-timeline__desc">{{ post.description }}</p>
+        {% endif %}
+        {% if post.images %}
+          {% include photo-gallery.html images=post.images %}
+        {% endif %}
+        {% if post.content %}
+          <div class="photo-timeline__body">
+            {{ post.content }}
+          </div>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
