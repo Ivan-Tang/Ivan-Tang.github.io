@@ -13,35 +13,39 @@
 <div class="photo-gallery photo-gallery--{{ gallery_layout }}">
   {% for img in gallery %}
     <figure class="photo-gallery__item">
+      {% assign image_path = img.image_path | default: "" %}
+      {% assign image_first = image_path | slice: 0, 1 %}
       {% if img.url %}
+        {% assign link_path = img.url | default: "" %}
+        {% assign link_first = link_path | slice: 0, 1 %}
         <a href=
-          {% if img.url contains "://" %}
-            "{{ img.url }}"
-          {% elsif img.url | slice: 0, 1 == "/" %}
-            "{{ img.url | prepend: base_path }}"
+          {% if link_path contains "://" %}
+            "{{ link_path }}"
+          {% elsif link_first == "/" %}
+            "{{ link_path | prepend: base_path }}"
           {% else %}
-            "{{ img.url | prepend: "/images/" | prepend: base_path }}"
+            "{{ link_path | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
           {% if img.title %}title="{{ img.title }}"{% endif %}
         >
           <img src=
-            {% if img.image_path contains "://" %}
-              "{{ img.image_path }}"
-            {% elsif img.image_path | slice: 0, 1 == "/" %}
-              "{{ img.image_path | prepend: base_path }}"
+            {% if image_path contains "://" %}
+              "{{ image_path }}"
+            {% elsif image_first == "/" %}
+              "{{ image_path | prepend: base_path }}"
             {% else %}
-              "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
+              "{{ image_path | prepend: "/images/" | prepend: base_path }}"
             {% endif %}
             alt="{% if img.alt %}{{ img.alt }}{% endif %}">
         </a>
       {% else %}
         <img src=
-          {% if img.image_path contains "://" %}
-            "{{ img.image_path }}"
-          {% elsif img.image_path | slice: 0, 1 == "/" %}
-            "{{ img.image_path | prepend: base_path }}"
+          {% if image_path contains "://" %}
+            "{{ image_path }}"
+          {% elsif image_first == "/" %}
+            "{{ image_path | prepend: base_path }}"
           {% else %}
-            "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
+            "{{ image_path | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       {% endif %}
