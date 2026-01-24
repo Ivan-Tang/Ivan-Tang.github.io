@@ -55,3 +55,20 @@ courses:
         pdf: "/files/notes/quantumn-mechanics/homework-8.pdf"
       - title: "作业9"
         pdf: "/files/notes/quantumn-mechanics/homework-9.pdf"
+  - id: statistical-physics
+    title: "统计物理"
+    url: /notes/statistical-physics/
+    chapters:
+      - title: "热统第一章"
+        pdf: "/files/notes/statistical-physics/热统第一章.pdf"
+      - title: "热统第二章"
+        pdf: "/files/notes/statistical-physics/热统第二章.pdf"
+      - title: "热统第三章"
+        pdf: "/files/notes/statistical-physics/热统第三章.pdf"
+      - title: "热统第五章"
+        pdf: "/files/notes/statistical-physics/热统第五章.pdf"
+      - title: "热统第六章"
+        pdf: "/files/notes/statistical-physics/热统第六章.pdf"
+      - title: "25春季期末"
+        pdf: "/files/notes/statistical-physics/25春季期末.pdf"
+  
