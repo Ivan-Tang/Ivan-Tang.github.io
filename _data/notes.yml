@@ -137,6 +137,31 @@ courses:
       - title: "第九章"
         pdf: "/files/notes/electromagnetism/电磁学第九章.pdf"
 
+  - id: theoretical-mechanics-liang
+    title: "理论力学"
+    url: /notes/theoretical-mechanics-liang/
+    chapters:
+      - title: "第二章 达朗贝尔原理"
+        pdf: "/files/notes/theoretical-mechanics-liang/第二章 达朗贝尔原理.pdf"
+      - title: "第三章 拉格朗日动力学"
+        pdf: "/files/notes/theoretical-mechanics-liang/第三章 拉格朗日动力学.pdf"
+      - title: "第四章 有心力 散射问题"
+        pdf: "/files/notes/theoretical-mechanics-liang/第四章 有心力 散射问题.pdf"
+      - title: "第五章 小振动"
+        pdf: "/files/notes/theoretical-mechanics-liang/第五章 小振动.pdf"
+      - title: "第六章 刚体力学"
+        pdf: "/files/notes/theoretical-mechanics-liang/第六章 刚体力学.pdf"
+      - title: "第七章 哈密顿力学"
+        pdf: "/files/notes/theoretical-mechanics-liang/第七章 哈密顿力学.pdf"
+      - title: "第八章 力学变分原理"
+        pdf: "/files/notes/theoretical-mechanics-liang/第八章 力学变分原理.pdf"
+      - title: "第九章 正则变换"
+        pdf: "/files/notes/theoretical-mechanics-liang/第九章 正则变换.pdf"
+      - title: "第十章 非线性力学初步"
+        pdf: "/files/notes/theoretical-mechanics-liang/第十章 非线性力学初步.pdf"
+      - title: "第十二章 流体静力学"
+        pdf: "/files/notes/theoretical-mechanics-liang/第十二章 流体静力学.pdf"
+
   - id: modern-physics
     title: "近代物理"
     url: /notes/modern-physics/
