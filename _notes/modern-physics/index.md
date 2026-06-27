@@ -5,8 +5,6 @@ permalink: /notes/modern-physics/
 author_profile: true
 ---
 
-# 近代物理
-
 {% include notes/chapter_list.html course_id="modern-physics" %}
 
 > 笔记由 Notability 手写笔记自动转换而来。
