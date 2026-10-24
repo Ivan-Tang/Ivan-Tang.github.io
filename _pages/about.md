@@ -24,25 +24,21 @@ You can find my CV at: [汤轶文CV](../assets/cv/汤轶文CV.pdf) [Yiwen Tang's
 {% endcomment %}
 ---
 
-
 ## 📈 Quantitative Research
 
-- **Lingjun Investment (QR Intern)**   
+- **Semimartingle Investment (QR Intern)**
+  End-to-End ML Model in High Frequency A-share Market
+- **Lingjun Investment (QR Intern)**
   Focusing on High Frequency Equity ML model
 - **Xuanxin Investment (QR Intern)**  
-  Focusing on High Frequency Equity ML Model, mainly LightGBM and GNN/HGNN.
-- **IMC Global Trading Challenge (2025)**  
-  Achieved **1st place in the Hong Kong region**, 2nd in China among 4,000+ teams (in the 3rd round).
+  Focusing on High Frequency Equity ML Model, mainly LightGBM and GNN/HGNN
 
 ---
-
 
 ## 🌞 Astrophysics Research
 
 - **3D Structure of Solar Eruptions**  
   In this project, we are trying to find out 3D magnetic structure as well as 3D velocity of an erupting filament.
-
-
 
 ## 📫 Contact
 
