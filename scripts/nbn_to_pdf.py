@@ -376,13 +376,14 @@ def render_page_simple(curves, layout, output_path, dpi=150):
     return img
 
 
-def render_to_pdf(nbn_path, output_path, dpi=150):
+def render_to_pdf(nbn_path, output_path, dpi=150, grid=False):
     """Convert a .nbn note to PDF.
 
     Args:
         nbn_path: Path to the .nbn bundle directory
         output_path: Path for the output PDF file
         dpi: Rendering DPI (default 150, higher = better quality, larger file)
+        grid: Draw Notability's 5mm grid paper background on blank pages
     """
     nbn_path = Path(nbn_path)
     if not nbn_path.is_dir():
@@ -435,7 +436,7 @@ def render_to_pdf(nbn_path, output_path, dpi=150):
     scale = dpi / 72.0
 
     if HAS_FITZ:
-        _render_with_fitz(curves, pages, layout, bg_pdf_path, output_path, dpi, scale)
+        _render_with_fitz(curves, pages, layout, bg_pdf_path, output_path, dpi, scale, grid)
     else:
         _render_with_pillow(curves, pages, layout, bg_pdf_path, output_path, dpi, scale)
 
@@ -443,7 +444,28 @@ def render_to_pdf(nbn_path, output_path, dpi=150):
     return output_path
 
 
-def _render_with_fitz(curves, pages, layout, bg_pdf_path, output_path, dpi, scale):
+# Notability 5mm grid paper: spacing 14.173pt, light blue lines
+GRID_SPACING = 14.173
+GRID_COLOR = (0.6392157077789307, 0.7176470756530762, 0.8274509906768799)
+GRID_WIDTH = 0.42648082971572876
+
+
+def _draw_grid(page, width, height):
+    """Draw Notability-style 5mm grid lines on a blank PDF page."""
+    shape = page.new_shape()
+    y = GRID_SPACING
+    while y < height:
+        shape.draw_line(fitz.Point(0, y), fitz.Point(width, y))
+        y += GRID_SPACING
+    x = 0.0
+    while x < width:
+        shape.draw_line(fitz.Point(x, 0), fitz.Point(x, height))
+        x += GRID_SPACING
+    shape.finish(color=GRID_COLOR, width=GRID_WIDTH)
+    shape.commit()
+
+
+def _render_with_fitz(curves, pages, layout, bg_pdf_path, output_path, dpi, scale, grid=False):
     """Render using PIL for strokes + PyMuPDF for PDF assembly.
 
     Strokes are rendered as high-res PNG images (using PIL), then inserted
@@ -480,6 +502,8 @@ def _render_with_fitz(curves, pages, layout, bg_pdf_path, output_path, dpi, scal
             page = doc.new_page(width=page_w, height=page_h)
             use_w = page_w
             use_h = page_h
+            if grid:
+                _draw_grid(page, use_w, use_h)
 
         # Render strokes as image overlay
         if page_strokes:
@@ -646,6 +670,7 @@ Examples:
     parser.add_argument('--limit', type=int, default=0, help='Max notes to convert (with --batch, 0=all)')
     parser.add_argument('--list', action='store_true', help='List metadata only, no conversion')
     parser.add_argument('--json', action='store_true', help='Output metadata as JSON (with --list)')
+    parser.add_argument('--grid', action='store_true', help='Draw 5mm grid paper background')
 
     args = parser.parse_args()
 
@@ -685,7 +710,7 @@ Examples:
                 if args.course and args.course not in meta.get('subject', ''):
                     continue
                 out = output_dir / f"{meta['name']}.pdf"
-                render_to_pdf(str(nbn), str(out), dpi=args.dpi)
+                render_to_pdf(str(nbn), str(out), dpi=args.dpi, grid=args.grid)
                 success += 1
             except Exception as e:
                 print(f"  Error converting {nbn.name}: {e}")
@@ -710,7 +735,7 @@ Examples:
         # Single note
         nbn_path = Path(args.input)
         output = args.output or f"{nbn_path.name.replace('.nbn', '')}.pdf"
-        render_to_pdf(str(nbn_path), output, dpi=args.dpi)
+        render_to_pdf(str(nbn_path), output, dpi=args.dpi, grid=args.grid)
 
 
 if __name__ == '__main__':

@@ -36,7 +36,7 @@ courses:
       - title: "第十章 绝热近似和Berry相位"
         pdf: "/files/notes/quantumn-mechanics/第十章 绝热近似和Berry相位.pdf"
       - title: "专题：量子纠缠和Rabi震荡"
-        pdf: "/files/notes/quantumn-mechanics/专题 量子纠缠和Rabi震荡.pdf"
+        pdf: "/files/notes/quantumn-mechanics/专题：量子纠缠和Rabi震荡.pdf"
       - title: "作业1"
         pdf: "/files/notes/quantumn-mechanics/homework-1.pdf"
       - title: "作业2"
@@ -83,6 +83,10 @@ courses:
         pdf: "/files/notes/statistical-physics/热统：相变和临界现象的统计理论.pdf"
       - title: "25春季期末"
         pdf: "/files/notes/statistical-physics/25春季期末.pdf"
+      - title: "热统第六七章"
+        pdf: "/files/notes/statistical-physics/热统第六七章.pdf"
+      - title: "热统第八章"
+        pdf: "/files/notes/statistical-physics/热统第八章.pdf"
 
   - id: solid-state-physics
     title: "固体物理"
@@ -199,4 +203,51 @@ courses:
         pdf: "/files/notes/electrodynamics/第六章 电磁波的辐射.pdf"
       - title: "第七章 狭义相对论"
         pdf: "/files/notes/electrodynamics/第七章 狭义相对论.pdf"
+
+  - id: advanced-quantum-mechanics
+    title: "高等量子力学"
+    url: /notes/advanced-quantum-mechanics/
+    chapters:
+      - title: "第 1 讲 历史"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量1历史.pdf"
+      - title: "第 2 讲 公理"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量2公理.pdf"
+      - title: "第 3 讲 二能级"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量3二能级.pdf"
+      - title: "第 4 讲 谐振子"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量4谐振子.pdf"
+      - title: "第 5 讲 对称性"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量5对称性.pdf"
+      - title: "第 6 讲 角动量"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量6角动量.pdf"
+      - title: "第 10 讲 几何"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量10几何.pdf"
+      - title: "第 11 讲 微扰"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量11微扰.pdf"
+      - title: "第 12 讲 微扰 2"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量12微扰2.pdf"
+      - title: "第 13 讲 变分"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量13变分.pdf"
+      - title: "第 14 讲 准经典近似"
+        pdf: "/files/notes/advanced-quantum-mechanics/高量14准经典近似.pdf"
+
+  - id: quantum-statistics
+    title: "量子统计"
+    url: /notes/quantum-statistics/
+    chapters:
+      - title: "第 1 讲 经典系综"
+        pdf: "/files/notes/quantum-statistics/量子统计1经典系综.pdf"
+      - title: "第 3 讲 二次量子化"
+        pdf: "/files/notes/quantum-statistics/量子统计3二次量子化.pdf"
+      - title: "第 4 讲 理想气体"
+        pdf: "/files/notes/quantum-statistics/量子统计4理想气体.pdf"
+
+  - id: quantum-transport
+    title: "量子输运"
+    url: /notes/quantum-transport/
+    chapters:
+      - title: "第 1 讲"
+        pdf: "/files/notes/quantum-transport/量子输运1.pdf"
+      - title: "第 2 讲"
+        pdf: "/files/notes/quantum-transport/量子输运2.pdf"
   
